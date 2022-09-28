@@ -7,31 +7,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fun calculator</title>
   <!--CSS de bootstrap-->
-  <link rel="stylesheet" href="./css/bootstrap-grid.rtl.css">
+  <!--<link rel="stylesheet" href="./css/bootstrap-grid.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">-->
  <!--My CSS-->
-  <link href="./script.js">
+ <link rel="stylesheet" href="./mystyles/styles_1.css">
 </head>
 
 <body>
 
   <!--Calcultator container-->
-  <div class="container-sm">
+  <div class="container-sm text text-center">
     <h1>Empieza a calcular</h1>
     <div class="row my-5 justify-content-md-center">
-      <div class="col">
-        <label for="" class="">Add number a</label>
+      <div class="col-md-6">
+        <label for="" class="number1"><h2>Add number a</h2></label>
         <input type="number" id="datoA" class="datoA" placeholder="a=2">
       </div>
-      <div class="row">
-        <div class="col">
-          <label for="" class="">Add number b</label>
+      <div class="row my-5 justify-content-md-center">
+        <div class="col-md-6">
+          <label for="" class="number2"><h2>Add number b</h2></label>
           <input type="number" id="datoB" class="datoB" placeholder="b=2">
         </div>
-        <div class="row">
-          <div class="col">
-            <label for="" class="">The result is:</label>
+        <div class="row my-5 justify-content-md-center">
+          <div class="col-md-6">
+            <label for="" class=""><h2>The result is:</h2></label>
             <input type="number" id="result" class="result" placeholder="r=4">
           </div>
         </div>
@@ -39,21 +39,28 @@
     </div>
   </div>
   <!--Estos son los botones de operación-->
-  <div class="container-sm">
-    <div class="row">
-      <div class="col">
+  <div class="container-sm text-center">
+    <div class="row my-5 justify-content-md-center">
+      <div class="col-md-6">
         <button type="button" class="btn btn-primary btn-lg" id="sum">Sum</button>
       </div>
-      <div class="col">
+      <div class="col-md-6">
         <button type="button" class="btn btn-primary btn-lg" id="sub">Substract</button>
       </div>
-      <div class="col">
+      <div class="col-md-6">
         <button type="button" class="btn btn-danger btn-lg" id="mult">Multiply</button>
       </div>
-      <div class="col">
+      <div class="col-md-6">
         <button type="button" class="btn btn-dark btn-lg" id="div">Divided</button>
       </div>
     </div>
+
+    <footer>
+      <div class="container">
+        <span>Aquí estamos, claro que sí.</span>
+      </div>
+    </footer>
+    
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
